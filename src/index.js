@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const listItem = document.createElement('li')
     listItem.textContent = newTask.value
     taskList.appendChild(listItem)
+    console.log(taskList)
 
     const newButton = document.createElement('button')
     newButton.textContent = "x"
@@ -19,8 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     newButton.addEventListener('click',(event) =>{
       listItem.remove()
+      //event.target.parentNode.remove();  another way to acess listItem
     })
-
+     
 
     //should be outside submit event?
 
