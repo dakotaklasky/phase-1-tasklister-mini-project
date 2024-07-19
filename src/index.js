@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const newTask = document.getElementById("new-task-description")
     const taskList = document.getElementById("tasks")
     const listItem = document.createElement('li')
-    listItem.textContent = newTask.value
+    listItem.textContent = newTask.value + " "
     taskList.appendChild(listItem)
     console.log(taskList)
 
@@ -22,17 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
       listItem.remove()
       //event.target.parentNode.remove();  another way to acess listItem
     
-    createTaskForm.reset();
+    
 
     })
      
-
-    //should be outside submit event?
-
-    //create button
-    //add click event listener to remove element
-  
+    createTaskForm.reset();
   })
+
 
 });
 
