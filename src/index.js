@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     newButton.addEventListener('click',(event) =>{
       listItem.remove()
       //event.target.parentNode.remove();  another way to acess listItem
+    
+    createTaskForm.reset();
+
     })
      
 
